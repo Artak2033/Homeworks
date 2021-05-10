@@ -76,7 +76,6 @@
 # def longest_words(file_name):
 
 # 	x = 0
-# 	c = []
 
 # 	with open(file_name,'r') as f:
 
@@ -85,12 +84,11 @@
 
 # 		for i in words:
 # 			if len(i) > x:
-# 				x = len(i) 
-# 		print(i)
+# 				x = len(i)
+# 				res = i 
+# 		print(res)
 
 # longest_words(file_name)
-
-
 
 
 
