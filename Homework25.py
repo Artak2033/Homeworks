@@ -121,3 +121,26 @@
 
 # 	f.write(result)
 # print(f.closed) 
+
+
+
+import json
+
+file_name = 'firsthomework.json'
+
+dict_info = {
+	'Name':'Artak',
+	'Age':22,
+	'Sex':'Male',
+	'Country':'Armenia'
+}
+
+user = [dict_info]
+
+with open(file_name,'w') as file:
+	json.dump(user,file)
+
+file = open(file_name)
+json_date = json.load(file)
+for data in json_date:
+	print(data)
